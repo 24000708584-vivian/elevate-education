@@ -1,0 +1,203 @@
+/* General page style */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f8fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.logo img{
+  
+  margin-top: 6px;
+  margin-left: 6px;
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+}
+
+/* Navigation */
+nav {
+  background-color: #0066cc;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Main Contact Section */
+.contact-section {
+  max-width: 1100px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h1 {
+  text-align: center;
+  color: #004080;
+  font-size: 2rem;
+}
+
+.contact-section p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* Two-column layout */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Left side (Form) */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Right side (Info) */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.social h3 {
+  margin-top: 20px;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social ul li {
+  margin: 5px 0;
+}
+
+.social ul li a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.social ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+/* ---------------------- */
+/* 📱 RESPONSIVE DESIGN */
+/* ---------------------- */
+@media (max-width: 768px) {
+  /* Stack form and info vertically */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-section {
+    padding: 25px;
+    margin: 20px;
+  }
+
+  .contact-section h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 0.95rem;
+  }
+
+  input, textarea, button {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
